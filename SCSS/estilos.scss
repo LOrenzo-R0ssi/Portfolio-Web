@@ -21,20 +21,18 @@ body{
     /* Barra de navegacion */
     header{
         background-color: #092940d7;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         position: sticky;
-        top: 0;
+        top: 0px;
         box-shadow: 0px 4px 29px -12px rgba(3, 23, 56, 0.477);
         -webkit-backdrop-filter: blur(20px);
                 backdrop-filter: blur(20px);
         z-index: 1;
-            
 
-        a{
+        .navbar{
+           /* Logo */
+            .navbar-brand{
             img{
-                width: 100px;
+                width: 130px;
                 margin-left: 60px;
                 padding: 15px;
                 transition: 0.4s;
@@ -42,33 +40,44 @@ body{
                     transform: scale(1.15, 1.15);
                 }
             }
+        }
+
+            /* Icono toggler */
+            .navbar-toggler{
+                border: none;
+                background-color: #dce5ee;
+                color: transparent;
+                &:hover{
+                    box-shadow: none;
+                }
+
+                &:focus{
+                    border: none;
+                }
             }
 
-            nav{
+            .collapse{
                 margin-right: 100px;
-                    ul{
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-                            li{
-                                list-style: none;
-                                    a {
-                                        padding: 5px 20px;
-                                        text-decoration: none;
-                                        color: #d2dfeb;
-                                        font-weight: 600;
-                                        font-size: 1.1rem;
-                                        transition: 0.4s;
+                .nav-item{
+                    list-style: none;
+                    .nav-link{
+                        padding: 5px 20px;
+                        text-decoration: none;
+                        color: #d2dfeb;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        transition: 0.4s;
 
-                                        &:hover{
-                                            color: #54C9FF;
-                                        }
-                                    } 
-
-                            }
+                        &:hover{
+                            color: #54C9FF;
                         }
+                        
+                    }
+                }
+            }  
             }
-    }
+       
+ }
 
     /* Cuerpo de la página */
     main{
@@ -77,11 +86,14 @@ body{
             height: 80vh;
             display: flex;
             align-items: center;
+            justify-content: center;
                 .hero{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    gap: 200px;
+                    flex-wrap: wrap;
+                    column-gap: 200px;
+                    row-gap: 60px;
                        .hero-text{
                             display: flex;
                             flex-direction: column;
@@ -91,6 +103,7 @@ body{
                                 h1{
                                     font-size: 3.5rem;
                                     color: #54C9FF;
+                                    font-weight: bold;
                                 }
                                 h2{
                                     font-size: 1.85rem;
@@ -115,7 +128,7 @@ body{
                        } 
 
                        .yo{
-                            width: 12%;
+                            width: 230px;
                        }
                 }
         }
@@ -142,6 +155,7 @@ body{
                             color: #54C9FF;
                             font-size: 2rem;
                             margin-bottom: 15px;
+                            font-weight: bold;
                         }
 
                     }
@@ -163,10 +177,13 @@ body{
                     color: #54C9FF;
                     font-size: 2rem;
                     margin-bottom: 15px;
+                    font-weight: bold;
                 }
                 .iconos{
                     display: flex;
                     align-items: center;
+                    flex-wrap: wrap;
+                    row-gap: 20px;
                     img{
                         width: 45px;
                         padding: 3px 0px;
@@ -186,6 +203,7 @@ body{
                             margin-left: 10px;
                             color: #d2dfeb;
                             font-size: 1.1rem;
+                            margin-bottom: 0;
                         }
 
                         &:hover{
@@ -206,7 +224,8 @@ body{
             h3{
                 color: #54C9FF;
                 font-size: 2rem;
-                margin-bottom: 15px; 
+                margin-bottom: 15px;
+                font-weight: bold;
             }
             .proyectos{
                 display: flex;
@@ -350,6 +369,7 @@ body{
                 color: #54C9FF;
                 font-size: 2rem;
                 margin: 30px 0px 15px 0px;
+                font-weight: bold;
             }
 
             img{
@@ -488,6 +508,83 @@ body{
 
 
 
+@media only screen and (max-width: 567px){
+    body{
+        header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
 
+        main{
+            #sobre-mi{
+                .sobre-mi{
+                    margin: 15px 70px;
+                    .sobre-mi-img{
+                        display: none;
+                    }
+                }
+            }
+
+            #habilidades{
+                .habilidades{
+                    margin: 15px 70px;
+                }
+            }
+
+            #proyectos{
+                margin: 15px 0px;
+                h3{
+                    margin-left: 70px;
+                    margin-bottom: 15px;
+                }
+                .proyectos{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .proyecto-1, .proyecto-2{
+                        width: 75%;
+                    }
+                }
+            }
+
+            #contacto{
+                margin: 0px 70px;
+
+                .contacto{
+                    img{
+                        display: none;
+                    }
+                    display: flex;
+
+                    form{
+                        input{
+                            width: 110%;
+                        }
+
+                        textarea{
+                            width: 120%;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+            footer{
+                .copy{
+                    p{
+                        display: none;
+                    }
+                }
+            }
+    }
+}
 
 

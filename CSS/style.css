@@ -21,37 +21,44 @@ body {
 }
 body header {
   background-color: rgba(9, 41, 64, 0.8431372549);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
-  top: 0;
+  top: 0px;
   box-shadow: 0px 4px 29px -12px rgba(3, 23, 56, 0.477);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   z-index: 1;
 }
-body header a img {
-  width: 100px;
+body header .navbar {
+  /* Logo */
+  /* Icono toggler */
+}
+body header .navbar .navbar-brand img {
+  width: 130px;
   margin-left: 60px;
   padding: 15px;
   transition: 0.4s;
 }
-body header a img:hover {
+body header .navbar .navbar-brand img:hover {
   transform: scale(1.15, 1.15);
 }
-body header nav {
+body header .navbar .navbar-toggler {
+  border: none;
+  background-color: #dce5ee;
+  color: transparent;
+}
+body header .navbar .navbar-toggler:hover {
+  box-shadow: none;
+}
+body header .navbar .navbar-toggler:focus {
+  border: none;
+}
+body header .navbar .collapse {
   margin-right: 100px;
 }
-body header nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-body header nav ul li {
+body header .navbar .collapse .nav-item {
   list-style: none;
 }
-body header nav ul li a {
+body header .navbar .collapse .nav-item .nav-link {
   padding: 5px 20px;
   text-decoration: none;
   color: #d2dfeb;
@@ -59,20 +66,28 @@ body header nav ul li a {
   font-size: 1.1rem;
   transition: 0.4s;
 }
-body header nav ul li a:hover {
+body header .navbar .collapse .nav-item .nav-link:hover {
   color: #54C9FF;
 }
-
+body main {
+  /* HERO */
+  /* Seccion "Sobre Mí" */
+  /* Seccion "Habilidades" */
+  /* Seccion "Proyectos" */
+}
 body main #hero {
   height: 80vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 body main #hero .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  flex-wrap: wrap;
+  column-gap: 200px;
+  row-gap: 60px;
 }
 body main #hero .hero .hero-text {
   display: flex;
@@ -84,6 +99,7 @@ body main #hero .hero .hero-text {
 body main #hero .hero .hero-text h1 {
   font-size: 3.5rem;
   color: #54C9FF;
+  font-weight: bold;
 }
 body main #hero .hero .hero-text h2 {
   font-size: 1.85rem;
@@ -103,7 +119,7 @@ body main #hero .hero .hero-text a:hover {
   background-color: #1e3d4b;
 }
 body main #hero .hero .yo {
-  width: 12%;
+  width: 230px;
 }
 body main #sobre-mi {
   display: flex;
@@ -127,6 +143,7 @@ body main #sobre-mi .sobre-mi .sobre-mi-text h3 {
   color: #54C9FF;
   font-size: 2rem;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 body main #sobre-mi .sobre-mi .sobre-mi-img img {
   width: 380px;
@@ -141,10 +158,13 @@ body main #habilidades .habilidades h3 {
   color: #54C9FF;
   font-size: 2rem;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 body main #habilidades .habilidades .iconos {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 body main #habilidades .habilidades .iconos img {
   width: 45px;
@@ -164,6 +184,7 @@ body main #habilidades .habilidades .iconos .html h4, body main #habilidades .ha
   margin-left: 10px;
   color: #d2dfeb;
   font-size: 1.1rem;
+  margin-bottom: 0;
 }
 body main #habilidades .habilidades .iconos .html:hover, body main #habilidades .habilidades .iconos .css:hover, body main #habilidades .habilidades .iconos .git:hover, body main #habilidades .habilidades .iconos .sass:hover, body main #habilidades .habilidades .iconos .bootstrap:hover {
   transform: scale(1.1, 1.1);
@@ -178,6 +199,7 @@ body main #proyectos h3 {
   color: #54C9FF;
   font-size: 2rem;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 body main #proyectos .proyectos {
   display: flex;
@@ -304,6 +326,7 @@ body main #contacto h3 {
   color: #54C9FF;
   font-size: 2rem;
   margin: 30px 0px 15px 0px;
+  font-weight: bold;
 }
 body main #contacto img {
   width: 70%;
@@ -417,6 +440,55 @@ body footer .redes a img {
 }
 body footer .redes a img:hover {
   transform: translateY(-0.6rem);
+}
+
+@media only screen and (max-width: 567px) {
+  body header .navbar .navbar-brand img {
+    margin-left: 10px;
+  }
+  body main #sobre-mi .sobre-mi {
+    margin: 15px 70px;
+  }
+  body main #sobre-mi .sobre-mi .sobre-mi-img {
+    display: none;
+  }
+  body main #habilidades .habilidades {
+    margin: 15px 70px;
+  }
+  body main #proyectos {
+    margin: 15px 0px;
+  }
+  body main #proyectos h3 {
+    margin-left: 70px;
+    margin-bottom: 15px;
+  }
+  body main #proyectos .proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main #proyectos .proyectos .proyecto-1, body main #proyectos .proyectos .proyecto-2 {
+    width: 75%;
+  }
+  body main #contacto {
+    margin: 0px 70px;
+  }
+  body main #contacto .contacto {
+    display: flex;
+  }
+  body main #contacto .contacto img {
+    display: none;
+  }
+  body main #contacto .contacto form input {
+    width: 110%;
+  }
+  body main #contacto .contacto form textarea {
+    width: 120%;
+  }
+  body footer .copy p {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
