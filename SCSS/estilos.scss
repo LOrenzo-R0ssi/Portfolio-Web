@@ -189,7 +189,7 @@ body{
                         padding: 3px 0px;
                     }
 
-                    .html, .css, .git, .sass, .bootstrap{
+                    .html, .css, .javascript, .git, .sass, .bootstrap{
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -213,6 +213,10 @@ body{
 
                     .sass, .bootstrap{
                         padding: 10px 30px;
+                    }
+
+                    .javascript img{
+                        border-radius: 5px;
                     }
                 }
             }
@@ -385,7 +389,7 @@ body{
                     border: 2px solid #54C9FF;
                     width: 110%;
                     outline: none;
-                    transition: 0.1s;
+                    transition: 0.09s;
                     color: #d2dfeb;
                     font-size: 0.9rem;
                     &:focus{
@@ -423,7 +427,7 @@ body{
                         border: 2px solid #54C9FF;
                         width: 110%;
                         outline: none;
-                        transition: 0.1s;
+                        transition: 0.09s;
                         color: #d2dfeb;
                         font-size: 0.9rem;
                         &:focus{
@@ -452,6 +456,7 @@ body{
                 transition: 0.3s;
                 &:hover{
                     transform: translateY(-0.6rem);
+                    cursor: pointer;
                 }
             }
             p{
@@ -462,6 +467,7 @@ body{
                 transition: 0.35s;
                 &:hover{
                     color: #54C9FF;
+                    cursor: pointer;
                 }    
             }
            
@@ -494,7 +500,7 @@ body{
             }
             a{
                 img{
-                    width: 50px;
+                    width: 55px;
                     transition: 0.4s;
                     &:hover{
                         transform: translateY(-0.6rem);

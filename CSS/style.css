@@ -170,7 +170,7 @@ body main #habilidades .habilidades .iconos img {
   width: 45px;
   padding: 3px 0px;
 }
-body main #habilidades .habilidades .iconos .html, body main #habilidades .habilidades .iconos .css, body main #habilidades .habilidades .iconos .git, body main #habilidades .habilidades .iconos .sass, body main #habilidades .habilidades .iconos .bootstrap {
+body main #habilidades .habilidades .iconos .html, body main #habilidades .habilidades .iconos .css, body main #habilidades .habilidades .iconos .javascript, body main #habilidades .habilidades .iconos .git, body main #habilidades .habilidades .iconos .sass, body main #habilidades .habilidades .iconos .bootstrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,17 +180,20 @@ body main #habilidades .habilidades .iconos .html, body main #habilidades .habil
   border-radius: 10px;
   transition: 0.5s;
 }
-body main #habilidades .habilidades .iconos .html h4, body main #habilidades .habilidades .iconos .css h4, body main #habilidades .habilidades .iconos .git h4, body main #habilidades .habilidades .iconos .sass h4, body main #habilidades .habilidades .iconos .bootstrap h4 {
+body main #habilidades .habilidades .iconos .html h4, body main #habilidades .habilidades .iconos .css h4, body main #habilidades .habilidades .iconos .javascript h4, body main #habilidades .habilidades .iconos .git h4, body main #habilidades .habilidades .iconos .sass h4, body main #habilidades .habilidades .iconos .bootstrap h4 {
   margin-left: 10px;
   color: #d2dfeb;
   font-size: 1.1rem;
   margin-bottom: 0;
 }
-body main #habilidades .habilidades .iconos .html:hover, body main #habilidades .habilidades .iconos .css:hover, body main #habilidades .habilidades .iconos .git:hover, body main #habilidades .habilidades .iconos .sass:hover, body main #habilidades .habilidades .iconos .bootstrap:hover {
+body main #habilidades .habilidades .iconos .html:hover, body main #habilidades .habilidades .iconos .css:hover, body main #habilidades .habilidades .iconos .javascript:hover, body main #habilidades .habilidades .iconos .git:hover, body main #habilidades .habilidades .iconos .sass:hover, body main #habilidades .habilidades .iconos .bootstrap:hover {
   transform: scale(1.1, 1.1);
 }
 body main #habilidades .habilidades .iconos .sass, body main #habilidades .habilidades .iconos .bootstrap {
   padding: 10px 30px;
+}
+body main #habilidades .habilidades .iconos .javascript img {
+  border-radius: 5px;
 }
 body main #proyectos {
   margin: 0px 270px;
@@ -338,7 +341,7 @@ body main #contacto form input {
   border: 2px solid #54C9FF;
   width: 110%;
   outline: none;
-  transition: 0.1s;
+  transition: 0.09s;
   color: #d2dfeb;
   font-size: 0.9rem;
 }
@@ -373,7 +376,7 @@ body main #contacto form .mensaje textarea {
   border: 2px solid #54C9FF;
   width: 110%;
   outline: none;
-  transition: 0.1s;
+  transition: 0.09s;
   color: #d2dfeb;
   font-size: 0.9rem;
 }
@@ -400,6 +403,7 @@ body footer .copy img {
 }
 body footer .copy img:hover {
   transform: translateY(-0.6rem);
+  cursor: pointer;
 }
 body footer .copy p {
   color: #dce5ee;
@@ -410,6 +414,7 @@ body footer .copy span {
 }
 body footer .copy span:hover {
   color: #54C9FF;
+  cursor: pointer;
 }
 body footer .navegacion {
   padding: 25px;
@@ -435,7 +440,7 @@ body footer .redes span {
   color: #5bb8e3;
 }
 body footer .redes a img {
-  width: 50px;
+  width: 55px;
   transition: 0.4s;
 }
 body footer .redes a img:hover {
