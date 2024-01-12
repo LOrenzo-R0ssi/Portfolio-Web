@@ -262,7 +262,7 @@ body main #proyectos .proyectos .proyecto-1 .proyecto-text .repo-y-deploy a {
 body main #proyectos .proyectos .proyecto-1 .proyecto-text .repo-y-deploy a:hover {
   background-color: #4183a1;
 }
-body main #proyectos .proyectos .proyecto-2 {
+body main #proyectos .proyectos .proyecto-2, body main #proyectos .proyectos .proyecto-3 {
   background-color: rgba(70, 99, 133, 0.2980392157);
   border-radius: 10px;
   padding: 15px;
@@ -272,37 +272,37 @@ body main #proyectos .proyectos .proyecto-2 {
   width: 30%;
   transition: 0.5s;
 }
-body main #proyectos .proyectos .proyecto-2:hover {
+body main #proyectos .proyectos .proyecto-2:hover, body main #proyectos .proyectos .proyecto-3:hover {
   transform: translateY(-0.8em);
 }
-body main #proyectos .proyectos .proyecto-2 .portada-proyecto {
+body main #proyectos .proyectos .proyecto-2 .portada-proyecto, body main #proyectos .proyectos .proyecto-3 .portada-proyecto {
   width: 90%;
   align-self: center;
   border-radius: 10px;
   border: 3px solid rgba(70, 99, 133, 0.9921568627);
   margin-top: 15px;
 }
-body main #proyectos .proyectos .proyecto-2 h5 {
+body main #proyectos .proyectos .proyecto-2 h5, body main #proyectos .proyectos .proyecto-3 h5 {
   font-size: 1.3rem;
   color: #dce5ee;
   margin: 10px 0px 5px 0px;
   text-shadow: 0px 0px 5px rgba(16, 27, 41, 0.398);
   text-align: center;
 }
-body main #proyectos .proyectos .proyecto-2 .proyecto-text {
+body main #proyectos .proyectos .proyecto-2 .proyecto-text, body main #proyectos .proyectos .proyecto-3 .proyecto-text {
   margin-left: 10px;
 }
-body main #proyectos .proyectos .proyecto-2 .proyecto-text img {
+body main #proyectos .proyectos .proyecto-2 .proyecto-text img, body main #proyectos .proyectos .proyecto-3 .proyecto-text img {
   width: 30px;
 }
-body main #proyectos .proyectos .proyecto-2 .proyecto-text p {
+body main #proyectos .proyectos .proyecto-2 .proyecto-text p, body main #proyectos .proyectos .proyecto-3 .proyecto-text p {
   color: #dce5ee;
   margin-bottom: 7px;
 }
-body main #proyectos .proyectos .proyecto-2 .proyecto-text .repo-y-deploy {
+body main #proyectos .proyectos .proyecto-2 .proyecto-text .repo-y-deploy, body main #proyectos .proyectos .proyecto-3 .proyecto-text .repo-y-deploy {
   margin: 20px 0px 5px 0px;
 }
-body main #proyectos .proyectos .proyecto-2 .proyecto-text .repo-y-deploy a {
+body main #proyectos .proyectos .proyecto-2 .proyecto-text .repo-y-deploy a, body main #proyectos .proyectos .proyecto-3 .proyecto-text .repo-y-deploy a {
   text-decoration: none;
   color: #e4f1ff;
   font-size: 1rem;
@@ -312,7 +312,7 @@ body main #proyectos .proyectos .proyecto-2 .proyecto-text .repo-y-deploy a {
   margin-right: 7px;
   transition: 0.4s;
 }
-body main #proyectos .proyectos .proyecto-2 .proyecto-text .repo-y-deploy a:hover {
+body main #proyectos .proyectos .proyecto-2 .proyecto-text .repo-y-deploy a:hover, body main #proyectos .proyectos .proyecto-3 .proyecto-text .repo-y-deploy a:hover {
   background-color: #4183a1;
 }
 body main #contacto {
