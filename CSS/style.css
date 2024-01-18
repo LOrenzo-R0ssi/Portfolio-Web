@@ -116,7 +116,7 @@ body main #hero .hero .hero-text a {
   transition: 0.4s;
 }
 body main #hero .hero .hero-text a:hover {
-  background-color: #1e3d4b;
+  background-color: #09628b;
 }
 body main #hero .hero .yo {
   width: 230px;
@@ -383,6 +383,21 @@ body main #contacto form .mensaje textarea {
 body main #contacto form .mensaje textarea:focus {
   border: 4px solid #54C9FF;
 }
+body main #contacto form .submit {
+  margin-top: 25px;
+}
+body main #contacto form .submit input {
+  background-color: #54C9FF;
+  border: none;
+  color: #072338;
+  font-weight: 900;
+  font-size: 1.1rem;
+  transition: 0.4s;
+}
+body main #contacto form .submit input:hover {
+  background-color: #09628b;
+  color: rgba(218, 225, 235, 0.8352941176);
+}
 body footer {
   font-size: 1.05rem;
   background-color: rgba(9, 41, 64, 0.8431372549);
@@ -473,7 +488,7 @@ body footer .redes a img:hover {
     align-items: center;
     justify-content: center;
   }
-  body main #proyectos .proyectos .proyecto-1, body main #proyectos .proyectos .proyecto-2 {
+  body main #proyectos .proyectos .proyecto-1, body main #proyectos .proyectos .proyecto-2, body main #proyectos .proyectos .proyecto-3 {
     width: 75%;
   }
   body main #contacto {
@@ -489,7 +504,7 @@ body footer .redes a img:hover {
     width: 110%;
   }
   body main #contacto .contacto form textarea {
-    width: 120%;
+    width: 110%;
   }
   body footer .copy p {
     display: none;

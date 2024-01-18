@@ -193,24 +193,32 @@
             <h3>Contáctame!</h3>
 
             <div class="contacto">
-                <form action="">
+                <form action="https://formsubmit.co/lorentavio08@gmail.com" method="POST" id="form">
                     <div class="nombre">
                         <label for="#name">Nombre</label>
-                        <input type="text" name="datos" id="name" placeholder="Ingresa tu nombre"
-                            autocomplete="given-name">
+                        <input type="text" name="Nombre" id="name" placeholder="Ingresa tu nombre"
+                            autocomplete="off" required>
                     </div>
 
                     <div class="email">
                         <label for="#email">E-mail</label>
-                        <input type="email" name="datos" id="email" placeholder="Ingresa tu e-mail"
-                            autocomplete="email">
+                        <input type="email" name="E-mail" id="email" placeholder="Ingresa tu e-mail"
+                        autocomplete="off" required>
                     </div>
 
                     <div class="mensaje">
                         <label for="#mensaje">Tu mensaje:</label>
-                        <textarea name="datos" id="mensaje" cols="30" rows="10"
-                            placeholder="Escibre tu mensaje aqui"></textarea>
+                        <textarea name="Mensaje" id="mensaje" cols="30" rows="10"
+                            placeholder="Escibre tu mensaje aqui" required></textarea>
                     </div>
+
+                    <div class="submit">
+                        
+                        <input type="submit" value="Enviar">
+                    </div>
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://lorenzo-rossi.netlify.app/">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
 
                 <img src="media/get-in-touch.svg" alt="">
@@ -250,6 +258,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
