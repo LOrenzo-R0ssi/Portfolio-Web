@@ -5,13 +5,12 @@
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
-/* Paleta de colores */
-   /* azul #3464fc
-   gris #b4c4d4 
-   o #b4b4d4
-   
-   BG: #092940
-   Celeste: #54C9FF*/
+/* Paleta de colores 
+    Azul: #3464fc
+    Gris: #b4c4d4 
+        o:#b4b4d4
+    BG: #092940
+    Celeste: #54C9FF*/
 
 
 
@@ -75,15 +74,13 @@ body{
                     }
                 }
             }  
-            }
-       
- }
+            }}
 
     /* Cuerpo de la página */
     main{
         /* HERO */
         #hero{
-            height: 80vh;
+            height: 90vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -94,26 +91,26 @@ body{
                     flex-wrap: wrap;
                     column-gap: 200px;
                     row-gap: 60px;
-                       .hero-text{
+                    .hero-text{
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-items: flex-start;
                             color: #d2dfeb;
                                 h1{
-                                    font-size: 3.5rem;
+                                    font-size: 4rem;
                                     color: #54C9FF;
                                     font-weight: bold;
                                 }
                                 h2{
-                                    font-size: 1.85rem;
+                                    font-size: 2rem;
                                 }
                                 a{
                                     
                                     border-radius: 5px;
                                     background-color: #5bb8e3;
                                     color: #dfebf6;
-                                    font-size: 1.1rem;
+                                    font-size: 1.16rem;
                                     font-weight: 600;
                                     padding: 10px;
                                     margin-top: 20px;
@@ -125,11 +122,10 @@ body{
                                         
                                     }
                                 }
-                       } 
-
-                       .yo{
-                            width: 230px;
-                       }
+} 
+                    .yo{
+                        width: 250px;
+                    }
                 }
         }
 
@@ -137,8 +133,8 @@ body{
         #sobre-mi{
             display: flex;
             align-items: center;
+            margin: 0px 270px;
                 .sobre-mi{
-                    margin: 0px 270px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -170,9 +166,8 @@ body{
 
         /* Seccion "Habilidades" */
         #habilidades{
-            margin-bottom: 80px;
+            margin: 90px 270px;
             .habilidades{
-                margin: 0px 270px;
                 h3{
                     color: #54C9FF;
                     font-size: 2rem;
@@ -274,6 +269,8 @@ body{
                         }
                         .repo-y-deploy{
                             margin: 20px 0px 5px 0px;
+                            display: flex;
+                            flex-wrap: wrap;
                             a{
                             text-decoration: none;
                             color: #e4f1ff;
@@ -324,7 +321,7 @@ body{
                         }
                     .proyecto-text{
                         margin-left: 10px;
-                      
+
                         img{
                             width: 30px;
                         }
@@ -376,10 +373,6 @@ body{
                 font-weight: bold;
             }
 
-            img{
-                width: 70%;
-            }
-
             form{
 
                 input{
@@ -387,9 +380,9 @@ body{
                     border-radius: 10px;
                     background-color: rgb(7, 35, 56);
                     border: 2px solid #54C9FF;
-                    width: 110%;
+                    width: 150%;
                     outline: none;
-                    transition: 0.09s;
+                    transition: all 0.09s ease-in-out;
                     color: #d2dfeb;
                     font-size: 0.9rem;
                     &:focus{
@@ -425,9 +418,9 @@ body{
                         border-radius: 10px;
                         background-color: rgb(7, 35, 56);
                         border: 2px solid #54C9FF;
-                        width: 110%;
+                        width: 150%;
                         outline: none;
-                        transition: 0.09s;
+                        transition: all 0.09s ease-in-out;
                         color: #d2dfeb;
                         font-size: 0.9rem;
                         &:focus{
@@ -452,6 +445,13 @@ body{
                         }
                     }
                 }
+
+            }
+            .img-contact{
+                width: 80%;
+                margin-left: 180px;
+                margin-top: 40px;
+                opacity: 90%;
             }
         }
 
@@ -487,7 +487,6 @@ body{
                     cursor: pointer;
                 }    
             }
-           
         }
 
         .navegacion{
@@ -524,14 +523,53 @@ body{
                     }
                 }
             }
-           
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1468px){
+    body{
+        main{
+            #sobre-mi, #habilidades, #proyectos, #contacto{
+                margin: 0px 100px;
+                margin-bottom: 80px;
+            }
+
+            #proyectos{
+                .proyectos{
+                    .proyecto-1, .proyecto-2, .proyecto-3{
+                        .repo-y-deploy{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            a{
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #contacto{
+                .contacto{
+                    form{
+                        input, textarea{
+                            width: 100%;
+                        }
+                    }
+                    .img-contact{
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
 
 
-
-@media only screen and (max-width: 567px){
+@media only screen and (max-width: 768px){
     body{
         header{
             .navbar{
@@ -581,10 +619,10 @@ body{
                 margin: 0px 70px;
 
                 .contacto{
+                    column-gap: 0px;
                     img{
                         display: none;
                     }
-                    display: flex;
 
                     form{
                         input{

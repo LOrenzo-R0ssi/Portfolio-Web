@@ -7,13 +7,12 @@
   scroll-behavior: smooth;
 }
 
-/* Paleta de colores */
-/* azul #3464fc
-gris #b4c4d4 
-o #b4b4d4
-
-BG: #092940
-Celeste: #54C9FF*/
+/* Paleta de colores 
+    Azul: #3464fc
+    Gris: #b4c4d4 
+        o:#b4b4d4
+    BG: #092940
+    Celeste: #54C9FF*/
 body {
   background-color: rgb(7, 35, 56);
   /* Barra de navegacion */
@@ -76,7 +75,7 @@ body main {
   /* Seccion "Proyectos" */
 }
 body main #hero {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,18 +96,18 @@ body main #hero .hero .hero-text {
   color: #d2dfeb;
 }
 body main #hero .hero .hero-text h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #54C9FF;
   font-weight: bold;
 }
 body main #hero .hero .hero-text h2 {
-  font-size: 1.85rem;
+  font-size: 2rem;
 }
 body main #hero .hero .hero-text a {
   border-radius: 5px;
   background-color: #5bb8e3;
   color: #dfebf6;
-  font-size: 1.1rem;
+  font-size: 1.16rem;
   font-weight: 600;
   padding: 10px;
   margin-top: 20px;
@@ -119,14 +118,14 @@ body main #hero .hero .hero-text a:hover {
   background-color: #09628b;
 }
 body main #hero .hero .yo {
-  width: 230px;
+  width: 250px;
 }
 body main #sobre-mi {
   display: flex;
   align-items: center;
+  margin: 0px 270px;
 }
 body main #sobre-mi .sobre-mi {
-  margin: 0px 270px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,10 +148,7 @@ body main #sobre-mi .sobre-mi .sobre-mi-img img {
   width: 380px;
 }
 body main #habilidades {
-  margin-bottom: 80px;
-}
-body main #habilidades .habilidades {
-  margin: 0px 270px;
+  margin: 90px 270px;
 }
 body main #habilidades .habilidades h3 {
   color: #54C9FF;
@@ -248,6 +244,8 @@ body main #proyectos .proyectos .proyecto-1 .proyecto-text p {
 }
 body main #proyectos .proyectos .proyecto-1 .proyecto-text .repo-y-deploy {
   margin: 20px 0px 5px 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 body main #proyectos .proyectos .proyecto-1 .proyecto-text .repo-y-deploy a {
   text-decoration: none;
@@ -331,17 +329,14 @@ body main #contacto h3 {
   margin: 30px 0px 15px 0px;
   font-weight: bold;
 }
-body main #contacto img {
-  width: 70%;
-}
 body main #contacto form input {
   padding: 10px;
   border-radius: 10px;
   background-color: rgb(7, 35, 56);
   border: 2px solid #54C9FF;
-  width: 110%;
+  width: 150%;
   outline: none;
-  transition: 0.09s;
+  transition: all 0.09s ease-in-out;
   color: #d2dfeb;
   font-size: 0.9rem;
 }
@@ -374,9 +369,9 @@ body main #contacto form .mensaje textarea {
   border-radius: 10px;
   background-color: rgb(7, 35, 56);
   border: 2px solid #54C9FF;
-  width: 110%;
+  width: 150%;
   outline: none;
-  transition: 0.09s;
+  transition: all 0.09s ease-in-out;
   color: #d2dfeb;
   font-size: 0.9rem;
 }
@@ -397,6 +392,12 @@ body main #contacto form .submit input {
 body main #contacto form .submit input:hover {
   background-color: #09628b;
   color: rgba(218, 225, 235, 0.8352941176);
+}
+body main #contacto .img-contact {
+  width: 80%;
+  margin-left: 180px;
+  margin-top: 40px;
+  opacity: 90%;
 }
 body footer {
   font-size: 1.05rem;
@@ -462,7 +463,28 @@ body footer .redes a img:hover {
   transform: translateY(-0.6rem);
 }
 
-@media only screen and (max-width: 567px) {
+@media only screen and (min-width: 768px) and (max-width: 1468px) {
+  body main #sobre-mi, body main #habilidades, body main #proyectos, body main #contacto {
+    margin: 0px 100px;
+    margin-bottom: 80px;
+  }
+  body main #proyectos .proyectos .proyecto-1 .repo-y-deploy, body main #proyectos .proyectos .proyecto-2 .repo-y-deploy, body main #proyectos .proyectos .proyecto-3 .repo-y-deploy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main #proyectos .proyectos .proyecto-1 .repo-y-deploy a, body main #proyectos .proyectos .proyecto-2 .repo-y-deploy a, body main #proyectos .proyectos .proyecto-3 .repo-y-deploy a {
+    margin-top: 15px;
+  }
+  body main #contacto .contacto form input, body main #contacto .contacto form textarea {
+    width: 100%;
+  }
+  body main #contacto .contacto .img-contact {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
   body header .navbar .navbar-brand img {
     margin-left: 10px;
   }
@@ -495,7 +517,7 @@ body footer .redes a img:hover {
     margin: 0px 70px;
   }
   body main #contacto .contacto {
-    display: flex;
+    column-gap: 0px;
   }
   body main #contacto .contacto img {
     display: none;
